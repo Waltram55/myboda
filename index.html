@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>W&D Gifts</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="logo">Wily&Denisse <span>Regalos</span></div>
+    </header>
+    <!-- Presentación -->
+    <section class="presentation">
+      <div class="presentation-content">
+        <h1>Regalos Memorables para el Gran Día</h1>
+        <h3>
+          Descubre nuestras opciones únicas para sorprender en ese momento
+          especial. Esta lista de regalos es enteramente opcional.
+        </h3>
+        <p>
+          Las imagenes de los regalos son recomendaciones, entregarlo en la
+          fiesta
+        </p>
+      </div>
+      <div class="presentation-image">
+        <img src="wd.png" alt="Pareja de bodas" />
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container">
+      <section class="product-grid">
+        <!-- Product Cards -->
+
+        <div class="product-card">
+          <img
+            src="https://http2.mlstatic.com/D_NQ_NP_713412-MLA71226804263_082023-O.webp"
+            alt="Set de Vasos de Cristal"
+          />
+          <h3>Set de Vasos x 6</h3>
+          <p>Vaso Gota Aruba Nadir Pack X 6</p>
+          <button class="btn-show-modal" data-product="Set de Vasos">
+            Obsequiar
+          </button>
+        </div>
+
+        <div class="product-card">
+          <img
+            src="https://acdn.mitiendanube.com/stores/001/472/384/products/img_9485-169c0081cfcc24855016962570693518-480-0.jpeg"
+            alt="Producto 2"
+          />
+          <h3>Platos x 4</h3>
+          <p>Set x 4 platos de postre Grindley crema</p>
+          <button class="btn-show-modal" data-product="Platos x 4">
+            Obsequiar
+          </button>
+        </div>
+        <!-- Repite para los 8 productos -->
+        <div class="product-card">
+          <img
+            src="https://http2.mlstatic.com/D_NQ_NP_954942-MLA51739016818_092022-O.webp"
+            alt="Producto 3"
+          />
+          <h3>Cubiertos x 6</h3>
+          <p>Set Cuchillo Tenedor Cucharita Ac. Inox. Carol X6 C/u</p>
+          <button class="btn-show-modal" data-product="Cubiertos x 6">
+            Obsequiar
+          </button>
+        </div>
+        <div class="product-card">
+          <img
+            src="https://acdn.mitiendanube.com/stores/001/064/648/products/img_3074_vsco-9d048811960318ee3117072347773206-1024-1024.jpeg"
+            alt="Producto 4"
+          />
+          <h3>Tazas x 4</h3>
+          <p>Taza y Plato Bamboo 160ml - set x 4 - CHEKKAHOME</p>
+          <button class="btn-show-modal" data-product="Tazas x 4">
+            Obsequiar
+          </button>
+        </div>
+        <div class="product-card">
+          <img
+            src="https://bassols.es/media/catalog/product/cache/b396165465e7ec8886b87bcfbf31e183/j/u/juego_de_s_banas_orion_azul_01.jpg"
+            alt="Producto 5"
+          />
+          <h3>Juego de Sábanas</h3>
+          <p>Juego de Sábanas Orion Azul</p>
+          <button class="btn-show-modal" data-product="Juego de Sabanas">
+            Obsequiar
+          </button>
+        </div>
+        <div class="product-card">
+          <img
+            src="https://acdn.mitiendanube.com/stores/001/179/290/products/fe991ec5-1d95-4ef0-9b89-feec891567f91-233869f14569bd514516820369209273-1024-1024.jpeg"
+            alt="Producto 6"
+          />
+          <h3>Juego de Toallas</h3>
+          <p>Toalla Y Toallón Grande Franco Valente 400 Gr Colores</p>
+          <button class="btn-show-modal" data-product="Juego de Toallas">
+            Obsequiar
+          </button>
+        </div>
+        <!-- Repite para los 8 productos -->
+        <div class="product-card">
+          <img
+            src="https://http2.mlstatic.com/D_NQ_NP_601154-MLA47861618595_102021-O.webp"
+            alt="Producto 7"
+          />
+          <h3>Set de Almohadas</h3>
+          <p>Pack O Combo 2 Almohadones 55 X 35 Largos Varios Colores</p>
+          <button class="btn-show-modal" data-product="Set de Almohadas">
+            Obsequiar
+          </button>
+        </div>
+        <div class="product-card">
+          <img
+            src="https://www.ortizyortega.com.ar/spree/products/31031/zoom/ph326918_2.jpg?1698961520"
+            alt="Producto 8"
+          />
+          <h3>Smart TV Samsung 32..</h3>
+          <p>Televisor inteligente Samsung HD de 32 pulgadas.</p>
+
+          <button class="btn-show-modal" data-product="Smart TV 32">
+            Obsequiar
+          </button>
+        </div>
+
+        
+      </section>
+    </main>
+    <section class="honeymoon">
+      <div class="honeymoon-image">
+        <img src="honeymoon.jpg" alt="Imagen de Luna de Miel" />
+      </div>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal" id="thank-you-modal">
+      <div class="modal-content">
+        <h2>¡Gracias por seleccionar este obsequio!</h2>
+        <p>Por favor, ingresa tu nombre y apellido para continuar:</p>
+        <form id="thank-you-form">
+          <input type="hidden" name="product" id="product-name" />
+          <input type="text" id="name" placeholder="Nombre" required />
+          <input type="text" id="lastname" placeholder="Apellido" required />
+          <button type="submit" id="confirm-button">Confirmar</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="social-icons">
+        <a href="https://instagram.com" target="_blank" class="icon">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.facebook.com/wi11y.L" target="_blank" class="icon">
+          <i class="fab fa-facebook"></i>
+        </a>
+        <a href="https://wa.me/3758555378" target="_blank" class="icon">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2024 Waltram-DG. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
